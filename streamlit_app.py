@@ -131,7 +131,7 @@ class SessionState:
 # Main App
 def main():
 
-    gif_path = "nwlg.gif"
+    gif_path = "assets/nwlg.gif"
     gif_url = st.image(gif_path).image
 
     st.markdown(
