@@ -135,7 +135,8 @@ def main():
     gif_path = "assets/nwLg.gif"
     st.image(gif_path)
 
-      st.markdown(
+     # Link to CSS file
+    st.markdown(
         """
         <head>
             <link rel="stylesheet" href="assets/styles.css">
@@ -143,6 +144,7 @@ def main():
         """,
         unsafe_allow_html=True
     )
+    # App title and header
     st.markdown(
         f"""
         <div style="display: flex; align-items: center; flex-direction:row">
