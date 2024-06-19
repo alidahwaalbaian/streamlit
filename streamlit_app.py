@@ -131,16 +131,19 @@ class SessionState:
 
 # Main App
 def main():
-    gif_path = "../assets/nwlg.gif"
+    # Get the directory of the current script
+    THIS_DIR = Path(__file__).parent
+    ASSETS = THIS_DIR / "assets"
+    gif_path = ASSETS / "nwlg.gif"
 
     # Check if the file exists
-    if not os.path.exists(gif_path):
+    if not gif_path.exists():
         st.error(f"File not found: {gif_path}")
         return
 
     try:
         # Display the GIF image
-        st.image(gif_path)
+        st.image(str(gif_path))
     except Exception as e:
         st.error(f"Error loading image: {e}")
         return
