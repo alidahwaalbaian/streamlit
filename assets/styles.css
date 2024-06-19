@@ -1,3 +1,5 @@
+#MainMenu {visibility: hidden;}
+header{visibility: hidden;}
 body {
     background-color: #000;
     color: #fff;
