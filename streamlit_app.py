@@ -131,7 +131,7 @@ class SessionState:
 
 # Main App
 def main():
-    gif_path = "assets/nwlg.gif"
+    gif_path = "/assets/nwlg.gif"
 
     # Check if the file exists
     if not os.path.exists(gif_path):
