@@ -134,14 +134,19 @@ def main():
 
     gif_path = "assets/nwLg.gif"
     st.image(gif_path)
-    st.markdown(
-        f"""
-         <head>
+
+      st.markdown(
+        """
+        <head>
             <link rel="stylesheet" href="assets/styles.css">
         </head>
+        """,
+        unsafe_allow_html=True
+    )
+    st.markdown(
+        f"""
         <div style="display: flex; align-items: center; flex-direction:row">
             <h1 style="margin: 0 10px;">أرشيف محاضرات الشيخ حسن الأشقر</h1>
-            
         </div>
         """, unsafe_allow_html=True
     )
