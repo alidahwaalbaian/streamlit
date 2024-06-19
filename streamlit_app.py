@@ -132,7 +132,7 @@ class SessionState:
 # Main App
 def main():
     # Get the directory of the current script
-    THIS_DIR = Path(__file__).parent
+    THIS_DIR = Path(__file__).parent.resolve()
     ASSETS = THIS_DIR / "assets"
     gif_path = ASSETS / "nwlg.gif"
 
