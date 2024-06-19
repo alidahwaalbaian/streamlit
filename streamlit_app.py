@@ -136,6 +136,9 @@ def main():
     st.image(gif_path)
     st.markdown(
         f"""
+         <head>
+            <link rel="stylesheet" href="assets/styles.css">
+        </head>
         <div style="display: flex; align-items: center; flex-direction:row">
             <h1 style="margin: 0 10px;">أرشيف محاضرات الشيخ حسن الأشقر</h1>
             
