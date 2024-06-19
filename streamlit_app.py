@@ -132,9 +132,8 @@ class SessionState:
 # Main App
 def main():
 
-    gif_path = "assets"
-    gif_url = st.image(gif_path).image
-
+    gif_path = "assets/nwLg.gif"
+    st.image(gif_path)
     st.markdown(
         f"""
         <div style="display: flex; align-items: center; flex-direction:row">
