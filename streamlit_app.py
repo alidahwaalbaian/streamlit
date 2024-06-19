@@ -130,17 +130,28 @@ class SessionState:
 
 # Main App
 def main():
-
     gif_path = "assets/nwlg.gif"
-    gif_url = st.image(gif_path).image
 
+    # Check if the file exists
+    if not os.path.exists(gif_path):
+        st.error(f"File not found: {gif_path}")
+        return
+
+    try:
+        # Display the GIF image
+        st.image(gif_path)
+    except Exception as e:
+        st.error(f"Error loading image: {e}")
+        return
+
+    # Render the HTML content
     st.markdown(
-        f"""
-        <div style="display: flex; align-items: center; flex-direction:row">
+        """
+        <div style="display: flex; align-items: center; flex-direction: row;">
             <h1 style="margin: 0 10px;">أرشيف محاضرات الشيخ حسن الأشقر</h1>
-            
         </div>
-        """, unsafe_allow_html=True
+        """, 
+        unsafe_allow_html=True
     )
 
     #st.title("Simple Blog App")
