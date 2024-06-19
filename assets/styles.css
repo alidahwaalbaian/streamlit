@@ -1,13 +1,16 @@
-/* styles.css */
-
 body {
+    background-color: #000;
+    color: #fff;
     font-family: Arial, sans-serif;
-    background-color: #000; /* Set background color to black */
-    color: #fff; /* Set text color to white */
     padding: 20px;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
+}
+
+h1 {
+    color: #fff;
+    margin: 10px;
 }
