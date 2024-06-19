@@ -131,31 +131,17 @@ class SessionState:
 
 # Main App
 def main():
-    # Get the directory of the current script
-    THIS_DIR = Path(__file__).parent.resolve()
-    ASSETS = THIS_DIR / "assets"
-    gif_path = ASSETS / "nwlg.gif"
 
-    # Check if the file exists
-    if not gif_path.exists():
-        st.error(f"File not found: {gif_path}")
-        return
+    gif_path = "nwlg.gif"
+    gif_url = st.image(gif_path).image
 
-    try:
-        # Display the GIF image
-        st.image(str(gif_path))
-    except Exception as e:
-        st.error(f"Error loading image: {e}")
-        return
-
-    # Render the HTML content
     st.markdown(
-        """
-        <div style="display: flex; align-items: center; flex-direction: row;">
+        f"""
+        <div style="display: flex; align-items: center; flex-direction:row">
             <h1 style="margin: 0 10px;">أرشيف محاضرات الشيخ حسن الأشقر</h1>
+            
         </div>
-        """, 
-        unsafe_allow_html=True
+        """, unsafe_allow_html=True
     )
 
     #st.title("Simple Blog App")
