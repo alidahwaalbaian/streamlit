@@ -157,6 +157,7 @@ def main():
         body {
             direction: rtl;
             text-align: right;
+            background-color:black;
         }
         </style>
         """, unsafe_allow_html=True
